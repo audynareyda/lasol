@@ -1,7 +1,8 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
 
-// https://vite.dev/config/
+// Ganti `lasol` dengan nama repositori GitHub kamu
 export default defineConfig({
   plugins: [react()],
-})
+  base: "/lasol/", // Tambahkan ini agar GitHub Pages dapat menemukan resource
+});
